@@ -97,13 +97,12 @@ header{
     background-color: var(--DarkViolet);
     height: 76vh;
     width: 100%;
-    position: absolute;
+    position: relative;
     background-image: url('/images/bg-pattern-intro-right-desktop.svg');
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-size: 35% 100%;
     background-position: 100% -60px;
-    top: 5rem;
 }
 .text{
     width: 46%;
@@ -139,9 +138,9 @@ p{
     cursor: pointer;
     height: 100%;
     width: 540px;
-    position: relative;
-    top: 10rem;
-    left: 10rem;
+    position: absolute;
+    top: 8rem;
+    left: 38rem;
 }
 .header-left-pattern{
     background: url('/images/bg-pattern-intro-left-desktop.svg');
@@ -254,6 +253,7 @@ footer{
 .socials img{
    padding-right: 10px; 
 }
+
 .footer-lower{
     display: flex;
     justify-content: space-between;
@@ -284,4 +284,36 @@ small{
 small:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+.icons{
+    display: none;
+}
+
+
+@media (max-width:768px){
+    .icons{
+        display: block;
+    }
+    .close{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+    }
+    
 }
